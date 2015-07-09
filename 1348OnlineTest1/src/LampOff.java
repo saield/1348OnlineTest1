@@ -1,10 +1,16 @@
 
 public class LampOff extends State{
+	
+	public LampOff(){
+		this.stateName="Off";
+	}
 
 	@Override
-	void switchState(Context c) {
-		// TODO Auto-generated method stub
-		
+	// TODO Auto-generated method stub
+	String switchState(Context c) {
+		State off=new LampOff();
+		c.setState(off);
+		return off.getStateName();
 	}
 
 }
